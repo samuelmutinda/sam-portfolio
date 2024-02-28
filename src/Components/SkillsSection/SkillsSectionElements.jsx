@@ -20,7 +20,6 @@ export const MainTitle = styled.h1`
 `
 
 export const SkillsCardsWrapper = styled.div`
-    /* padding: 3em; */
     width: 82%;
     margin: auto;
     display: flex;
@@ -28,14 +27,16 @@ export const SkillsCardsWrapper = styled.div`
     gap: 30px;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 1200px) {
+        width: 90%;
+    }
 `
 
 export const SkillCard = styled.div`
     border-radius: 20px;
     padding: 2em;
-    width: 450px;
-    height: 350px;
-    /* background-color: #262729; */
+    max-width: 450px;
     background-color: #fff;
     color: #000;
 `

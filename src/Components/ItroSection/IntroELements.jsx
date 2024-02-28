@@ -6,8 +6,8 @@ export const HeroBg = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 90vh;
     z-index: 1;
+    height: 100vh;
 `
 
 export const HeroImg = styled.div`
@@ -17,7 +17,6 @@ export const HeroImg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     overflow: hidden;
     background-image: url(${image1});
     background-position: center;
@@ -27,130 +26,45 @@ export const HeroImg = styled.div`
 
 export const HeroWrapper = styled.div`
     position: absolute;
-    width: 80%;
+    width: 100%;
     margin: auto;
     color: #fff;
-    height: 86vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 5%;
+    justify-content: center;
 
     @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-        width: 100%;
+        width: 90%;
         flex-direction: column;
-        gap: 120px;
-    }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
-    }
-    @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
     }
 `
 
-export const LeftSection = styled.div`
-    width: 58%;
+export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: center;
-
-    @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-        text-align: center;
-    }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
-    }
-    @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
-    }
-`
-
-export const RightSection = styled.div`
-    background-color: #262729;
-    width: 80%;
-    border: 1px transparent;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 360px;
 
-    @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-        height: 300px;
+    @media only screen and (max-width: 768px){
+        gap: 0px;
     }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
-    }
-    @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
-    }
-`
-
-export const RightSectionP = styled.div`
-    font-size: 15px;
-    padding: 2em;
-    font-weight: 100;
-
-    @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-        text-align: center;
-    }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
-    }
-    @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
-    }
-`
-
-export const RightSectionIcons = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    padding-top: 10px;
-    padding-left: 2em;
-    padding-right: 2em;
-
-    @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-    }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
-    }
-    @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
-    }
-`
-
-export const Icon = styled.img`
-    height: 40px;
-    width: 40px;
 `
 
 export const IntroText = styled.div`
-    padding-right: 150px;
     font-size: 80px;
     font-weight: 100;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
 
     @media only screen and (max-width: 1200px){
-        /*Tablets [601px -> 1200px]*/
-        padding: 0;
-        padding-top: 90px;
         text-align: center;
     }
-    @media only screen and (max-width: 600px){
-        /*Big smartphones [426px -> 600px]*/
+    @media only screen and (max-width: 768px){
+        font-size: 50px;
     }
     @media only screen and (max-width: 425px){
-        /*Small smartphones [325px -> 425px]*/
+        font-size: 30px;
     }
 `
 
@@ -158,19 +72,33 @@ export const BottomRow = styled.div`
     font-weight: 200;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
+
+    @media only screen and (max-width: 1200px){
+        flex-direction: column;
+        padding-top: 90px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 768px){
+        width: 100%;
+        gap: 10px;
+    }
 `
 
 export const TextA = styled.p`
     font-size: 15px;
     font-weight: 200;
     width: 200px;
+    text-align: center;
 `
 
 export const TextB = styled.p`
     font-size: 13px;
     font-weight: 300;
     width: 200px;
+    text-align: center;
 `
 
 export const ContactButtonWrapper = styled.div`

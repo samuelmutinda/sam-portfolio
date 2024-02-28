@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? 'rgba(0, 0, 0, 0.3)' : 'transparent')};
     backdrop-filter: ${({scrollNav})=>(scrollNav ? 'blur(5px)': 'blur(0px)')};
-    height: 10vh;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     margin: auto;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1;
 `;
 
 export const NavWrapper = styled.div`
@@ -21,7 +21,24 @@ export const NavWrapper = styled.div`
     gap: 30px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+
+    @media only screen and (max-width: 820px){
+        justify-content: space-between;
+    }
+`
+
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media only screen and (max-width: 820px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+    }
 `
 
 export const NavList = styled.div`
@@ -32,6 +49,14 @@ export const NavList = styled.div`
     flex-direction: row;
     gap: 30px;
     align-items: center;
+
+    @media only screen and (max-width: 1200px){
+        font-size: 13px;
+        gap: 20px;
+    }
+    @media only screen and (max-width: 820px){
+        display: none;
+    }
 `;
 
 export const SiteLogo = styled.img`
@@ -39,6 +64,10 @@ export const SiteLogo = styled.img`
     padding-top: 17px;
     padding-bottom: 17px;
     height: 40px;
+
+    @media only screen and (max-width: 1200px){
+        width: 120px;
+    }
 `
 
 export const NavItem = styled.p`           
@@ -54,6 +83,13 @@ export const SocialsWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @media only screen and (max-width: 820px){
+        display: none;
+    }
+    @media only screen and (max-width: 1200px){
+        gap: 15px;
+    }
 `
 
 export const SocialItem = styled.p`
@@ -63,6 +99,9 @@ export const SocialItem = styled.p`
 
     &:hover{
         border-bottom: 0.5px solid;
+    }
+    @media only screen and (max-width: 1200px){
+        font-size: 10px;
     }
 `
 

@@ -8,7 +8,7 @@ export const Project = styled.div`
     padding: 2em;
     color: #000;
     background-color: #fff;
-    border: 1px solid #787878;
+    border: 1px solid rgba(25, 25, 28, .2);
     border-radius: 10px;
 `
 export const ProjectDate = styled.div`

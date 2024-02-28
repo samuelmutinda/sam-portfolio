@@ -10,6 +10,10 @@ export const MyProjectsWrapper = styled.div`
     margin: auto;
     width: 80%;
     padding: 3em 0 4em 0;
+
+    @media only screen and (max-width: 1200px) {
+        width: 90%;
+    }
 `
 
 export const ProjectsTitle = styled.h1`

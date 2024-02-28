@@ -7,8 +7,10 @@ import {
     NavBtnLink,
     SiteLogo,
     SocialItem,
-    SocialsWrapper
+    SocialsWrapper,
+    MobileIcon
 } from "./NavbarElements"
+import {FaBars} from 'react-icons/fa';
 import siteLogo from '../../assets/dev-logo.svg'
 import { useState, useEffect } from "react"
 
@@ -34,6 +36,9 @@ export default function Navbar() {
         <Nav scrollNav = {scrollNav}>
             <NavWrapper>
                 <SiteLogo src={siteLogo} alt="logo"/>
+                <MobileIcon>
+                    <FaBars />
+                </MobileIcon>
                 <NavList>
                     {navItems.map((value, index) => {
                         return <NavItem key={index}>{value}</NavItem>

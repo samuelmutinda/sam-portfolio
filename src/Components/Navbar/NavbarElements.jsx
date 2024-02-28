@@ -20,6 +20,7 @@ export const NavWrapper = styled.div`
     width: 80%;
     gap: 30px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 `
 
@@ -37,7 +38,7 @@ export const SiteLogo = styled.img`
     cursor: pointer;
     padding-top: 17px;
     padding-bottom: 17px;
-    height: 5vh;
+    height: 40px;
 `
 
 export const NavItem = styled.p`           

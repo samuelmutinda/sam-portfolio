@@ -34,7 +34,20 @@ export const HeroWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5%
+    gap: 5%;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        width: 100%;
+        flex-direction: column;
+        gap: 120px;
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const LeftSection = styled.div`
@@ -43,10 +56,22 @@ export const LeftSection = styled.div`
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const RightSection = styled.div`
     background-color: #262729;
+    width: 80%;
     border: 1px transparent;
     border-radius: 20px;
     display: flex;
@@ -54,21 +79,53 @@ export const RightSection = styled.div`
     justify-content: center;
     align-items: center;
     height: 360px;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        height: 300px;
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const RightSectionP = styled.div`
     font-size: 15px;
     padding: 2em;
     font-weight: 100;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const RightSectionIcons = styled.div`
     display: flex;
     flex-direction: row;
     gap: 60px;
-    padding-top: 7%;
+    padding-top: 10px;
     padding-left: 2em;
     padding-right: 2em;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const Icon = styled.img`
@@ -82,6 +139,19 @@ export const IntroText = styled.div`
     font-weight: 100;
     text-align: left;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        padding: 0;
+        padding-top: 90px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const BottomRow = styled.div`

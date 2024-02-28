@@ -17,6 +17,7 @@ export const ProfileWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 30px;
 `
@@ -32,6 +33,21 @@ export const ProfileImg = styled.img`
     object-fit: contain;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+
+    @media only screen and (max-width: 1200px){
+        /*Tablets [601px -> 1200px]*/
+        width: 100%;
+        border-radius: 30px;
+        /* height: 400px;
+        object-fit: none;
+        object-position: 40% 61%; */
+    }
+    @media only screen and (max-width: 600px){
+        /*Big smartphones [426px -> 600px]*/
+    }
+    @media only screen and (max-width: 425px){
+        /*Small smartphones [325px -> 425px]*/
+    }
 `
 
 export const ProfileRight = styled.div`
@@ -76,5 +92,6 @@ export const Icon = styled.img`
 
 export const Signature = styled.img`
     padding-top: 1em;
+    padding-bottom: 2em;
     height: 40px;
 `

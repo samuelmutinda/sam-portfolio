@@ -25,4 +25,5 @@ export const ProjectsBody = styled.div`
     flex-wrap: wrap;
     gap: 50px;
     align-items: center;
+    justify-content: center;
 `

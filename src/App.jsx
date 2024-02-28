@@ -5,6 +5,7 @@ import Profile from './Components/Profile'
 import { homeProfileData } from './Components/Profile/data'
 import SkillsSection from './Components/SkillsSection'
 import { skillsHomeData } from './Components/SkillsSection/data'
+import MyProjects from './Components/MyProjects'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <IntroSection />
       <Profile {...homeProfileData} />
       <SkillsSection {...skillsHomeData} />
+      <MyProjects />
     </>
   )
 }

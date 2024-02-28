@@ -6,6 +6,7 @@ export const ProfileBg = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #000;
+    font-weight: 100;
 `
 
 export const ProfileWrapper = styled.div`
@@ -40,10 +41,10 @@ export const ProfileRight = styled.div`
 `
 
 export const ProfileH1 = styled.h1`
-    font-weight: 100;
     text-transform: uppercase;
     padding-bottom: 0.5em;
     text-align: center;
+    font-weight: 100;
 `
 
 export const ProfileContent = styled.div`

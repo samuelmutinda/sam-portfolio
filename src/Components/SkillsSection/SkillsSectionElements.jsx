@@ -35,7 +35,9 @@ export const SkillCard = styled.div`
     padding: 2em;
     width: 450px;
     height: 350px;
-    background-color: #262729;
+    /* background-color: #262729; */
+    background-color: #fff;
+    color: #000;
 `
 export const SkillIcon = styled.img`
     height: 50px;

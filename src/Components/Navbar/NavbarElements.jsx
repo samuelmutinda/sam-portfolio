@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? 'rgba(0, 0, 0, 0.3)' : 'transparent')};
-    backdrop-filter: ${({scrollNav})=>(scrollNav ? 'blur(5px)': 'blur(0px)')};
+    backdrop-filter: ${({scrollNav})=>(scrollNav ? 'blur(7px)': 'blur(0px)')};
     height: 70px;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
-    border-bottom: 0.5px solid #787878;
+    border-bottom: 1px solid #787878;
     width: 80%;
     gap: 30px;
     display: flex;

@@ -4,12 +4,13 @@ export const ContactBg = styled.div`
     background-color: #fff;
     color: #000;
     width: 100%;
+    padding-bottom: 6em;
 `
 
 export const ContactWrapper = styled.div`
     margin: auto;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.7em;
+    padding-bottom: 3em;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -27,8 +28,13 @@ export const SplitSection = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;   
+
+    @media only screen and (max-width:1200px){
+        flex-direction: column;
+        gap: 3em;
+        text-align: center;
+    }
 `
 
 export const LeftWrapper = styled.div`
@@ -38,6 +44,11 @@ export const LeftWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+
+    @media only screen and (max-width: 1200px){
+        border: none;
+        padding: 0;
+    }
 `
 
 export const FormSubtitle = styled.div`
@@ -60,7 +71,13 @@ export const PolicyWarning = styled.div`
     font-weight: 100;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+
+    @media only screen and (max-width: 1200px) {
+        align-items: center;
+    }
 `
 
 export const PolicyWarningA = styled.div`
@@ -68,8 +85,7 @@ export const PolicyWarningA = styled.div`
 
 export const PolicyWarningB = styled.div`
     font-weight: 300;
-    text-decoration: underline;
-    text-decoration-color: #787878;
+    border-bottom: 1px solid #787878;
     cursor: pointer;
 `
 
@@ -78,6 +94,11 @@ export const SocialsWrapper = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3em;
+
+    @media only screen and (max-width: 1200px) {
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const Icon = styled.div`
@@ -95,6 +116,10 @@ export const RightWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 1200px) {
+        padding: 0;
+    }
 `
 
 export const ContactForm = styled.form`
@@ -102,6 +127,11 @@ export const ContactForm = styled.form`
     flex-direction: column;
     font-size: 17px;
     gap: 0.5em;
+
+    @media only screen and (max-width: 1200px) {
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const FormLabel = styled.div`
